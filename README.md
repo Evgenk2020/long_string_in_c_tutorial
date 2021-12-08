@@ -11,29 +11,3 @@
   >void mem_clean(add_string *_add) -- function for memory clean containing declared string<br/>
   ></p>
   >
-
-<p>See an example:</p>
-
-  ><p>
-  ></p>
-  >void make_string()<br/>
-  >{<br/>
-  > _string one = (_string)"this is my first phrase ";<br/>
-  >_string two = (_string)" the second phrase ";<br/>
-  >char three[] = " the third phrase !!";<br/>
-  ><br/>
-  >add_string now = _lstring();<br/>
-  >add_string zen = _lstring();<br/>
-  ><br/>
-  >glue_string(&now, one);<br/>
-  >glue_string(&now, two);<br/>
-  ><br/>
-  >glue_string(&zen, three);<br/>
-  >glue_string(&zen, two);<br/>
-  ><br/>
-  >printf("my_string: %s\n", now.final_string); //print the new string<br/>
-  >printf("my_string: %s\n", zen.final_string); //print the new string<br/>
-  ><br/>
-  >mem_clean(&now);<br/>
-  >mem_clean(&zen);<br/>
-  >}<br/></p>
