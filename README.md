@@ -16,23 +16,24 @@
 
   ><p>
   ></p>
-  >void make_string() {<br/>
+  >void make_string()<br/>
+  >{<br/>
   > _string one = (_string)"this is my first phrase ";<br/>
-  _string two = (_string)" the second phrase ";
-  char three[] = " the third phrase !!";
-
-  add_string now = _lstring();
-  add_string zen = _lstring();
-
-  glue_string(&now, one);
-  glue_string(&now, two);
-
-  glue_string(&zen, three);
-  glue_string(&zen, two);
-
-  printf("my_string: %s\n", now.final_string); //print the new string
-  printf("my_string: %s\n", zen.final_string); //print the new string
-
-  mem_clean(&now);
-  mem_clean(&zen);
-}
+  >_string two = (_string)" the second phrase ";<br/>
+  >char three[] = " the third phrase !!";<br/>
+  ><br/>
+  >add_string now = _lstring();<br/>
+  >add_string zen = _lstring();<br/>
+  ><br/>
+  >glue_string(&now, one);<br/>
+  >glue_string(&now, two);<br/>
+  ><br/>
+  >glue_string(&zen, three);<br/>
+  >glue_string(&zen, two);<br/>
+  ><br/>
+  >printf("my_string: %s\n", now.final_string); //print the new string<br/>
+  >printf("my_string: %s\n", zen.final_string); //print the new string<br/>
+  ><br/>
+  >mem_clean(&now);<br/>
+  >mem_clean(&zen);<br/>
+  >}<br/></p>
